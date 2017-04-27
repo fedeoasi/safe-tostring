@@ -41,7 +41,7 @@ class safeToString extends StaticAnnotation {
     }
 
     val newToString =
-      q"""override def toString(): String = {
+      q"""override def toString: String = {
             val sb = new StringBuilder
             sb.append(${Lit.String(cls.name.toString)})
             sb.append(${Lit.String("(")})

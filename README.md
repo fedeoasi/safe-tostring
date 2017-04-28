@@ -9,4 +9,4 @@ annotate the fields you want to hide:
 @safeToString case class Credentials(username: String, @hidden password: String)
 ```
 
-In the above example the `password` field will be printed as `****`.
+A sample `Credentials` object will be printed as `Credentials(user,****)`.
